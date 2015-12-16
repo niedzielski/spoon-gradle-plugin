@@ -77,7 +77,7 @@ modifyPom {
   }
 }
 
-task integrationTest(type: GradleBuild, dependsOn: ['check', 'install']) {
+task integrationTest(type: GradleBuild) {
   dir = file('example')
   tasks = ['clean', 'spoon']
 }
